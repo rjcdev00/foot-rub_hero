@@ -5,6 +5,8 @@ module.exports = function (passport) {
 
 	//add any API routes here
 
+router.get('/',(req, res) =>{
 
+});
 	return router;
 };
