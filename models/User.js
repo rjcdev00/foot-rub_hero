@@ -1,22 +1,26 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const passportLocalMongoose = require('passport-local-mongoose');
-mongoose.connect('mongodb://localhost/foot-rub-hero-development');
+// mongoose.connect('mongodb://localhost/foot-rub-hero-development');
+
+
 // ***should these each be in their own model?****
 const User = new Schema({
-	name: {
-		type: String,
+	name:{  
+		type:String,
 		trim: true,
 		required: "Name required."
-	},
-	session_number: {
+	}
+	
+	,
+	sessions: {
 		type: Number,
 		trim: true
-	},
-	date: {
-		type: Date,
-		default: Date.now
 	}
+	// date: {
+	// 	type: Date,
+	// 	default: Date.now
+	// }
 
 });
 //passport-local-mongoose creates a 'username' and some password fields for you
