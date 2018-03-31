@@ -1,0 +1,9 @@
+/* body {
+    background-image: url("foot-print-full.jpg");
+} */
+/* body {
+    background-color: black;
+} */
+.image1 {
+    background-image: "foot-print-full-jpg"
+}
