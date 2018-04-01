@@ -1,26 +1,19 @@
 import React from 'react';
-import "./style.css";
 import {Link} from 'react-router-dom';
-import {Card} from 'react-materialize';
-import {Button} from 'react-materialize';
-import {Row} from 'react-materialize';
-import {Col} from 'react-materialize';
-import {MediaBox} from 'react-materialize';
+import {Card, CardTitle, Button, Row, Col} from 'react-materialize';
+
+
+import "./style.css";
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
 
 const SignIn = (props)=> {
 
 	return (
-		<div>
-		 <Row>
-			 <Col m={6} offset={'m3'}>
-			 <MediaBox src="foot-print-full.jpg" caption="Be a Hero" width="350">
-			 </MediaBox>
-			 </Col>
-			 </Row>
 
-
+		<div className="container" id="signInCont">
+		 
+		
 			<Row>				
 			<Col m={4} offset={'m4'} className='landing-card'>
 		<Card className='blue-grey darken-2' textClassName='white-text' title='SIGN IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
