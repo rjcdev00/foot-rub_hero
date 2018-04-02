@@ -4,9 +4,10 @@ import {Link} from 'react-router-dom';
 
 
 import {Card, CardTitle, Button, Row, Col} from 'react-materialize';
-
-
 import "./style.css";
+
+
+
 
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
@@ -29,15 +30,14 @@ const SignIn = (props)=> {
 			 </div>
 			 </Col>
 			 </Row>
-			 
 
 
-		<div className="container" id="signInCont">
+		{/* <div className="container" id="signInCont"> */}
 		 
 		
 			<Row>				
 			<Col m={4} offset={'m4'} className='landing-card'>
-		<Card id ="card1" title='LOG IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
+		<Card id ="card1"   className='z-depth-2' title='LOG IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
 		
 		
 			<form>
@@ -48,7 +48,7 @@ const SignIn = (props)=> {
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 				<br />
 				{/* <button type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button> */}
-				<Button className="btn waves-effect waves-light" type="submit" name="/auth/signin"  onClick = {props.handleSubmit}>Log in 
+				<Button className="btn waves-effect waves-light z-depth-5" type="submit" name="/auth/signin"  onClick = {props.handleSubmit}>Log in 
    		<i className="material-icons right">send</i>
   			</Button>
 			</form>
@@ -58,8 +58,8 @@ const SignIn = (props)=> {
 	  </Card>
 	  </Col>
 	  </Row>
-	  {/* </Col> */}
-	</div>
+
+
 	</div>	
 	);
 
