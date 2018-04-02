@@ -5,7 +5,7 @@ import {Card} from 'react-materialize';
 import {Button} from 'react-materialize';
 import {Row} from 'react-materialize';
 import {Col} from 'react-materialize';
-import {MediaBox} from 'react-materialize';
+
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
 
@@ -13,17 +13,24 @@ const SignIn = (props)=> {
 
 	return (
 		<div>
+			
 		 <Row>
+			 <div id="hero">
+				<h1> Footrub Hero </h1>
+				<h3> Be someone's hero </h3>
+		 	</div>
+			 
 			 <Col m={6} offset={'m3'}>
-			 <MediaBox src="foot-print-full.jpg" caption="Be a Hero" width="350">
-			 </MediaBox>
+			 <div className= "card-panel">
+			{/* <img className="responsive-img" src="../Images/both-feet.png" alt=" feets that aren't rendering" /> */}
+			 </div>
 			 </Col>
 			 </Row>
-
+			 
 
 			<Row>				
 			<Col m={4} offset={'m4'} className='landing-card'>
-		<Card className='blue-grey darken-2' textClassName='white-text' title='SIGN IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
+		<Card id ="card1" title='LOG IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
 		
 		
 			<form>
@@ -34,7 +41,7 @@ const SignIn = (props)=> {
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 				<br />
 				{/* <button type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button> */}
-				<Button className="btn waves-effect waves-light" type="submit" name="/auth/signin"  onClick = {props.handleSubmit}>Sign in 
+				<Button className="btn waves-effect waves-light" type="submit" name="/auth/signin"  onClick = {props.handleSubmit}>Log in 
    		<i className="material-icons right">send</i>
   			</Button>
 			</form>

@@ -1,0 +1,14 @@
+body{
+    background-color: #32849f;
+    opacity: 50%;
+    /* background-image:url( "foot-print-full.jpg") */
+}
+
+#card1 {
+    text-align: center;
+    margin-top: 50%;
+    background-color: #b25a00;
+    color:white;
+    
+    
+}
