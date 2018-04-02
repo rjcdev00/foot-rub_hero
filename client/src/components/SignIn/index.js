@@ -1,24 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-<<<<<<< HEAD
-import {Card} from 'react-materialize';
-import {Button} from 'react-materialize';
-import {Row} from 'react-materialize';
-import {Col} from 'react-materialize';
 
-=======
+
+
 import {Card, CardTitle, Button, Row, Col} from 'react-materialize';
 
 
 import "./style.css";
->>>>>>> 677861f5785ab64487fb0058432c1627359509cb
+
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
 
 const SignIn = (props)=> {
 
 	return (
-<<<<<<< HEAD
+
 		<div>
 			
 		 <Row>
@@ -34,8 +30,7 @@ const SignIn = (props)=> {
 			 </Col>
 			 </Row>
 			 
-=======
->>>>>>> 677861f5785ab64487fb0058432c1627359509cb
+
 
 		<div className="container" id="signInCont">
 		 
@@ -64,7 +59,7 @@ const SignIn = (props)=> {
 	  </Col>
 	  </Row>
 	  {/* </Col> */}
-	
+	</div>
 	</div>	
 	);
 
