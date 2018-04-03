@@ -1,40 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
-
-
 import {Card, CardTitle, Button, Row, Col} from 'react-materialize';
+import Hero from "./components/Hero";
 import "./style.css";
-
-
-
-
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
 
 const SignIn = (props)=> {
-
+	class SignIn extends React.Component {
+		render() {
 	return (
-
-		<div>
-			
-		 <Row>
-			 <div id="hero">
-				<h1> Footrub Hero </h1>
-				<h3> Be someone's hero </h3>
-		 	</div>
-			 
-			 <Col m={6} offset={'m3'}>
-			 <div className= "card-panel">
-			{/* <img className="responsive-img" src="../Images/both-feet.png" alt=" feets that aren't rendering" /> */}
-			 </div>
-			 </Col>
-			 </Row>
-
-
-		{/* <div className="container" id="signInCont"> */}
-		 
-		
+	<div>	
+    	
+	  <Hero />
+	  </div>
+	<div>		  
 			<Row>				
 			<Col m={4} offset={'m4'} className='landing-card'>
 		<Card id ="card1"   className='z-depth-2' title='LOG IN'actions={[<Link to = "/signup" >Go to sign up</Link>]}>	
@@ -60,8 +40,12 @@ const SignIn = (props)=> {
 	  </Row>
 
 
-	</div>	
+		
+	</div>
 	);
+	}
+	}
+
 
 }
 
