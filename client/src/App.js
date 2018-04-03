@@ -6,8 +6,8 @@ import axios from 'axios';
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Home from "./components/Home";
-import Hero from "./components/Hero";
-import Tips from "./components/Tips";
+// import Hero from "./components/Hero";
+// import Tips from "./components/Tips";
 
 
 class App extends Component {

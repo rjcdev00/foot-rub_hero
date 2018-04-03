@@ -1,24 +1,25 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import {Card, CardTitle, Button, Row, Col} from 'react-materialize';
+import {Card,  Button, Row, Col} from 'react-materialize';
 import "./style.css"
 
 const SignUp = (props)=> {
 	
 		return (
-			<div>
+			<div className= "container" id= "signUpCont">
 				
 			 <Row>
 				 
 			 <div id="hero">
 				<h1> Footrub Hero </h1>
 				<h3> Be someone's hero </h3>
+				<img src={'footprints.jpg'} />
 		 	</div>
 			 
 			 <Col m={6} offset={'m3'}>
 			 <div className= "card-panel">
-			<img className="responsive-img" src="../Images/both-feet.png" alt=" feets that aren't rendering" />
+			<img className="responsive-img" src={"../Images/both-feet.png"} alt=" feets that aren't rendering" />
 			 </div>
 			 </Col>
 			 </Row>
