@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Card, Button, Row, Col} from 'react-materialize';
+import {Card, Row, Col} from 'react-materialize';
+import Hero from "../Hero";
 // const Home = (props) =>{
 // 	return (
 // 		<div>
@@ -14,12 +15,9 @@ import {Card, Button, Row, Col} from 'react-materialize';
 // import {Image} from 'react-materialize';
 
 const Home = (props)=> {
-class Home extends React.Component {
-	render () {
-
-
 	return (
 	<div>
+		<Hero />
 		
 
 		
@@ -50,7 +48,7 @@ class Home extends React.Component {
 	</div>	
 	);
 	}
-}
-}
+
+
 
 export default Home;
