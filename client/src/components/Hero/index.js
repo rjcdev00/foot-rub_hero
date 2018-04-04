@@ -6,26 +6,23 @@ import "./style.css"
 const Hero = (props)=> {
 
      
- return (
-  
+    return (  
         <div>
 				
-        <Row>
+            <Row>
             
-        <div id="hero">
-           <h1> Footrub Hero </h1>
-           <h3> Be someone's hero </h3>
-        </div>        
-        <Col m={6} offset={'m3'}>
-        <div className= "card-panel">
-       <img className="responsive-img" src="../Images/both-feet.png" alt=" feets that aren't rendering" />
-        </div>
-        </Col>
-        </Row>
-        </div>
-        
-    
- );
+                <div id="hero">
+                <h1> Footrub Hero </h1>
+                <h3> Be someone's hero </h3>
+                </div>        
+                <Col m={6} offset={'m3'}>
+                    <div className= "card-panel">
+                        <img className="responsive-img" src="../../Images/foot-print-full.png" alt=" feets that aren't rendering" />
+                     </div>
+                </Col>
+            </Row>
+        </div>       
+    );
 }
    
 

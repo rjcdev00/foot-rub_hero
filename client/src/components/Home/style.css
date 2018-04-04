@@ -1,3 +1,19 @@
 #card1 {
-    margin-top: -500px;
+    margin-top: 100px;
+   
+}
+#hint-link{
+    font-size: 24px;
+}
+
+title{ 
+font-size: 48px;
+}
+.disclaimer {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#disclaimerP{
+    color:red;
+    font-style: bold;
 }
