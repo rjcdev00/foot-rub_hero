@@ -17,7 +17,7 @@ const Hero = (props)=> {
                 </div>        
                 <Col m={6} offset={'m3'}>
                     <div className= "card-panel">
-                        <img className="responsive-img" src="../../Images/foot-print-full.png" alt=" feets that aren't rendering" />
+                        <img className="responsive-img" src="../../../public/assets/images/foot-print-full.png" alt=" feets that aren't rendering" />
                      </div>
                 </Col>
             </Row>

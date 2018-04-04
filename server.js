@@ -12,6 +12,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 // Serve up static assets
 app.use(express.static("client/build"));
+//this is what needs to be changed to find my images
+app.use('/static',express.static('client/public'));
+
 
  // For Passport
 app.use(session({ secret: 'changeThis',resave: true, saveUninitialized:true})); // session secret
@@ -22,7 +25,6 @@ require('./config/passport.js')(passport,models.User);
 // Add routes, both API and view
 const routes = require("./routes")(passport);
 app.use("/",routes);
-
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
