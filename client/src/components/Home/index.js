@@ -1,50 +1,55 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Card, Row, Col} from 'react-materialize';
+import {Card,
+		 Row, 
+		 Col,
+		 Dropdown, 
+		 NavItem, 
+		 Button,
+		 Input
+		} from 'react-materialize';
 import Hero from "../Hero";
-// const Home = (props) =>{
-// 	return (
-// 		<div>
-// 			<h1>You REALLY (home index.js) should only see this if you are logged in!</h1>
-// 			<p>{props.auth.username}</p>
-// 			<button onClick = {props.handleLogout}>Log Out</button>
-// 		</div>
-// 	);
-// }
-// import {MediaBox} from 'react-materialize';
-// import {Image} from 'react-materialize';
+import "./style.css";
+
 
 const Home = (props)=> {
 	return (
-	<div>
-		<Hero />
-		
-
-		
-			
-		 <Row>
-					 
-			<Col m={8} offset={'m2'} className='landing-card'>
-		<Card id ="card1"   className='z-depth-2' title='Options'actions={[<Link to = "/signup" >Go to sign up</Link>]}>
-		<Col m={8} offset={'m2'} className="option-card">
-		<Row   />
-		<button onClick = {props.handleLogout}>Log Out</button>{[<Link to = "/tips" >Helpful tips</Link>]}
-		</Col>	
 		<div>
-			<h1>You REALLY (home index.js) should only see this if you are logged in!</h1>
-			<p>{props.auth.username}</p>
-			
-		</div>
-		
-			
-			
-		
-	
-	  </Card>
-	  </Col>
-	  </Row>
+			<Hero />					
+		 	<Row>
+					 
+				<Col m={6} offset={'m3'} className='landing-card'>
+					<Card id ="card1"   className='z-depth-2' title='Options'actions={		[<Link id ='hint-link' to ="/tips" >Helpful tips</Link>]}>
+						<Dropdown trigger ={
+								<Button>Duration</Button>
+									}>												<NavItem>10 Min</NavItem>
+									<NavItem>20 Min</NavItem>
+									</Dropdown>
+						<Row>
+							<Col m={4} offset={'m4'} className="disclaimer">
+								<Card>	
+									<p id='disclaimerP'>I, {props.auth.username}   understand that massage therapy is not a substitute for medical care and that it is recommended that I work with my primary caregiver for any condition I may have.. </p>
 
+									<Row>
+										<Input m={8} offset={'m2'} type='select' label='' icon='weekend' defaultValue='1'>
+										<option value='1'>I Agree</option>
+										<option value='2'>I Disagree</option>
+										</Input>
+									</Row>	
+											
+								</Card>	
+							</Col>
+						</Row>	 
+								  	<button onClick = {props.handleLogout}>Log Out</button>
+											
+											
+				
+					</Card>
+				</Col>	
+				
+			</Row>
 
+			
 	</div>	
 	);
 	}
