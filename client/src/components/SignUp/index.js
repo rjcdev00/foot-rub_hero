@@ -16,7 +16,7 @@ const SignUp = (props)=> {
 				<Hero />
 				<Row>				
 					<Col m={4} offset={'m4'}>
-						<Card id ="card1" className='z-depth-2' title='REGISTER'actions={[<Link to = "/" >Go to Log in</Link>]}>	
+						<Card id ="card1" className='z-depth-4' title='REGISTER'actions={[<Link to = "/" >Go to Log in</Link>]}>	
 							<form>
 									<label>Email</label><br/>
 									<input value = {props.username} onChange = {props.handleChange} name='username' type='email' placeholder = 'example@email.com'/>
