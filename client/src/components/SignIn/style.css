@@ -17,20 +17,20 @@ font-family: 'Freckle Face', cursive;
     
     
 }
-
+#feet{
+    background-color: transparent;
+}
 #hero {
     font-size: 64px;
     /* font-family: 'Bigelow Rules', cursive; */
     font-family: 'Freckle Face', cursive;
         text-align: center;
+        background-color: #32849f;
 }   
 
 button {
     font-size: 24px;
     font-family: 'Freckle Face', cursive; 
 }
-.card-panel{
-    /* background-image: url("../../Images/foot-print-full.jpg"); */
-    background-color: yellow;
-}
+
 
