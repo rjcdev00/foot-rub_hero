@@ -1,5 +1,9 @@
 import React from 'react';
-import {Card,Row, Col} from 'react-materialize';
+import { Button,
+         Dropdown,
+         NavItem,
+         Modal
+        } from 'react-materialize';
 
 // import {Link} from 'react-router-dom';
 
@@ -7,25 +11,51 @@ import {Card,Row, Col} from 'react-materialize';
 const Tips = (props) => {
 
 return (
-    <Row>
-     	 {/* <div id="hero">
-				<h1> Footrub Hero </h1>
-				<h3> Be someone's hero </h3>
-             </div> */}
+    <div>
+        <Dropdown trigger={
+            <Button>Tips</Button>
+            }>
+                <NavItem> 
+                    <Modal
+                                    header='Contraindications'
+                            trigger={<NavItem>Nopes</NavItem>}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt    mollit anim id est laborum</p>
+                    </Modal>
+                </NavItem>
+
+
+                <NavItem divider />
+                    <NavItem>
+                        <Modal
+                                    header='Oils and Lotions'
+                            trigger={<NavItem>Oils</NavItem>}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt    mollit anim id est laborum</p>
+                        </Modal>
+                    </NavItem>
+
+
+                <NavItem divider />
+                <NavItem>
+                        <Modal
+                                    header='Get Comfortable'
+                            trigger={<NavItem>Position</NavItem>}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt    mollit anim id est laborum</p>
+                        </Modal>
+                    </NavItem>
+                
+                <NavItem divider />
+                <NavItem>
+                        <Modal
+                                    header='Strokes and Pressure'
+                            trigger={<NavItem>Strokes</NavItem>}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt    mollit anim id est laborum</p>
+                        </Modal>
+                    </NavItem>
             
-			
-			 
-             <Card id="tip-card" className= "z-depth-2" title='Tips'>
-			 <Col m={8} offset={'m2'}>
-			 <div className= "card-panel">
-            {/* <img className="responsive-img" src="../Images/both-feet.png" alt=" feets that aren't rendering" /> */}
-            </div>
-            </Col>
-            </Card>
-            
-			</Row>
-			  
-             
+        </Dropdown>
+               
+    </div>            
+                
 );
 
 
