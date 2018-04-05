@@ -1,19 +1,22 @@
+/* Home */
 #card1 {
     margin-top: 100px;
-   
-}
-#hint-link{
-    font-size: 24px;
-}
+ }
+
 
 title{ 
 font-size: 48px;
 }
 .disclaimer {
-    
-   
+    background-color: #e6e6e6;
+    border-radius: 10px; 
+    margin: 5px;
 }
 #disclaimerP{
-    color:red;
-    font-style: bold;
+    color:red;   
+    margin: 5px;
+   
+}
+#session-begin {
+    margin-bottom: 25px;
 }

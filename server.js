@@ -12,7 +12,6 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 // Serve up static assets
 app.use(express.static("client/build"));
-//this is what needs to be changed to find my images
 app.use('/static',express.static('client/public'));
 
 
