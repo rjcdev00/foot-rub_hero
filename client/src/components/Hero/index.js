@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+
 import {CardPanel,Col, Row } from 'react-materialize';
 import FootprintsFull from"../../Images/bothFeet.png";
 import "./style.css" ;

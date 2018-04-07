@@ -5,9 +5,11 @@ import {Card,
 		 Button,
 		 Input
 		} from 'react-materialize';
+import {Link}from 'react-router-dom'
 import Duration from "../Duration";		
 import Hero from "../Hero";
 import Tips from "../Tips";
+// import Timer from "../Timer";
 
 import "./style.css";
 
@@ -41,9 +43,12 @@ const Home = (props)=> {
 											
 								</Card>	
 								<Button id="session-begin" className='z-depth-3'>Begin</Button>
+								<Link to={{pathname: '/Leftfoot'}}>leftfoot</Link>{' '}
 							</Col>
 						</Row>	 
 								  	<Button onClick = {props.handleLogout}>Log Out</Button>
+
+									  {/* <Timer /> */}
 									  
 											
 					</Card>
@@ -51,10 +56,10 @@ const Home = (props)=> {
 				
 			</Row>
 
-		\
+		</div>
 
 			
-	</div>	
+		
 	);
 	}
 

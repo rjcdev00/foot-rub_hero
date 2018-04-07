@@ -1,8 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Card, Row, Button, Col} from 'react-materialize';
+import {Button,
+		Card,
+		Col,
+		Row  } from 'react-materialize';
 // import Leftfoot from '../Leftfoot';
 import Hero from "../Hero";
+
 import "./style.css";
 // import {MediaBox} from 'react-materialize';
 // import {Image} from 'react-materialize';
