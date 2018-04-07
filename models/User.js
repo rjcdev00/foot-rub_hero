@@ -10,9 +10,9 @@ const User = new Schema({
 		type:String,
 		trim: true,
 		required: "Name required."
-	}
+	},
 	
-	,
+	
 	sessions: {
 		type: Number,
 		trim: true
