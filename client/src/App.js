@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import axios from 'axios';
-
+import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
-import Home from "./components/Home";
+import Leftfoot from "./components/Leftfoot";
+
 // import Hero from "./components/Hero";
 // import Tips from "./components/Tips";
 
@@ -44,7 +45,7 @@ class App extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-
+// console.log('Handle submit');
     //call a sign In function
     const newUser = {
       username: this.state.username,
@@ -116,6 +117,14 @@ class App extends Component {
             return <Redirect to = "/" />
           } else {
             return <Home handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+          } 
+        }
+        }/>
+        <Route exact path = "/leftfoot" render = {()=> {
+          if(!loggedIn){
+            return <Redirect to = "/" />
+          } else {
+            return <Leftfoot handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
         }/>
