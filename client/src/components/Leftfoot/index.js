@@ -5,11 +5,11 @@ import {
     Row
 } from 'react-materialize';
 import './style.css';
-import Countdown from '../Countdown';
+// import Countdown from '../Countdown';
 import Hero from "../Hero";
 
 const Leftfoot = (props) => {
-    render(){
+   
         return(
             <div>
                 <Hero />
@@ -17,7 +17,7 @@ const Leftfoot = (props) => {
                     <Col m={4} offset={'m4'}>
 
                         <Card id='card1' className='z-depth-2'>
-                            <Countdown />
+                            {/* <Countdown /> */}
                     
                         </Card>
                     </Col>
@@ -25,5 +25,5 @@ const Leftfoot = (props) => {
             </div>
         );
     }    
-}
+
 export default Leftfoot;

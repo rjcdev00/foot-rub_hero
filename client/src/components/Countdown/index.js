@@ -9,31 +9,31 @@ const Countdown = (props) => {
           logMilliseconds: true,
       };
        
-      onComplete(status); {
-        this.setState({
-          timerIsComplete: status
-        });
-      }
+      // onComplete = (status) => {
+      //   this.setState({
+      //     timerIsComplete: status
+      //   });
+      // }
        
-      onReset() {
-        this.setState({
-          resetRequested: false
-        });
-      }
+      // onReset = () => {
+      //   this.setState({
+      //     resetRequested: false
+      //   });
+      // }
        
-      timerValue(value) {
-        this.timer = value;
-        if (this.state.logMilliseconds) {
-          console.log(value);
-        }
-      }
+      // timerValue = (value) => {
+      //   this.timer = value;
+      //   if (this.state.logMilliseconds) {
+      //     console.log(value);
+      //   }
+      // }
        
-      onResetRequest() {
-        this.setState({
-          resetRequested: true
-        });
-        this.timer = 0;
-      }
+      // onResetRequest = () => {
+      //   this.setState({
+      //     resetRequested: true
+      //   });
+      //   this.timer = 0;
+      // }
        
     
         return (

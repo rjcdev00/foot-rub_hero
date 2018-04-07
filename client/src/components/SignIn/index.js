@@ -16,12 +16,10 @@ const SignIn = (props)=> {
 	return (
 		<div>
 			<Hero />
-			
-		  		
-
 				 <Row>
 					<Col m={4} offset={'m4'}>
-					 	<Card id='card1' className='z-depth-2' title="LOG IN" actions={[<Link to = '/SignUp' > Register </Link>]}>
+					 	<Card id='card1' className='z-depth-2' title=" " actions={[<Link to = '/SignUp' > Register </Link>]}>
+						 <h1 id= 'heading1'> LOG IN</h1>
 							<form>
 								<label>Email</label><br/>
 								<input value = {props.username} onChange = {props.handleChange} name='username' type='email' placeholder = 'example@email.com'/>
