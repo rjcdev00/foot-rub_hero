@@ -8,6 +8,7 @@ import {Card,
 import Duration from "../Duration";		
 import Hero from "../Hero";
 import Tips from "../Tips";
+
 import "./style.css";
 
 
@@ -43,11 +44,14 @@ const Home = (props)=> {
 							</Col>
 						</Row>	 
 								  	<Button onClick = {props.handleLogout}>Log Out</Button>
+									  
 											
 					</Card>
 				</Col>	
 				
 			</Row>
+
+		\
 
 			
 	</div>	
