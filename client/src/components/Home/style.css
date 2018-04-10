@@ -3,7 +3,9 @@
     margin-top: 100px;
  }
 
-
+.landing-card{
+    margin-top: -300px;
+}
 title{ 
 font-size: 48px;
 }
@@ -19,4 +21,8 @@ font-size: 48px;
 }
 #session-begin {
     margin-bottom: 25px;
+}
+
+#ses-link{
+    color:white !important;
 }

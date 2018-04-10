@@ -1,1 +1,87 @@
 /* LeftFoot */
+#left-single{
+    height: 660px;
+    width: 410px;
+    border: 2px;
+    border-radius: 20px;
+}
+
+#cursor{
+    width: 50px;
+    height: 50px;
+    border-radius:20px;
+    background-color: red;
+    position: relative;
+    /* animation-name: example;
+    animation-duration: 25s;
+    animation-iteration-count: infinite; */
+}
+/* @keyframes example {
+    0%   {background-color:red; left:20px; top:150px;}
+    25%  {background-color:yellow; left:100px; top:75px;}
+    50%  {background-color:blue; left:0px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
+
+#cursor {
+	
+    animation: slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                left:70px;
+                top: 220px;
+            animation-iteration-count: infinite;
+}
+
+
+ /**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@keyframes slide-top {
+    0% {
+        transform: translateX(0px);
+        /* transform: translateY(-200px); */
+    }
+    10%{
+         transform: translateX(40px);   
+         /* transform: translateY(60px); */
+    
+
+    }
+    20%{    
+        transform: translateX(80px);
+        /* transform: translateY(120px); */
+    }
+    30%{
+        transform: translateX(120px);
+        /* transform: translateY(180px); */
+    }
+    40%{
+        transform: translateX(160px);
+        /* transform: translateY(240px); */
+    }
+    50%{
+        transform: translateX(200px); 
+        /* transform: translateY(300px); */
+    }
+    60%{
+        transform: translateX(240px);
+        /* transform: translateY(360px);  */
+    }
+    70%{transform: translateX(280px);
+        /* transform: translateY(420px); */
+    }
+    80%{transform: translateX(320px);
+        /* transform: translateY(480px); */
+    }
+    90%{transform: translateX(360px);
+        /* transform: translateY(540px); */
+    }
+    
+    100% {
+        transform: translateX(400px);
+      transform: translateY(-50px);
+    }
+  }
+  

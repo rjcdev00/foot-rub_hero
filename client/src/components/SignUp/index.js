@@ -9,12 +9,13 @@ import {
 	Col
 	} from 'react-materialize';	
 import "./style.css";
+
 const SignUp = (props)=> {
 	return (
 		<div>
 			<Hero />
 				<Row>
-					<Col m={4} offset={'m4'}>
+					<Col m={4} offset={'m4'} className='landing-card'>
 							<Card id ="card1" className='z-depth-4' title=''actions={[<Link to = "/" >Go to Log in</Link>]}>	
 									<h1 id='heading1'>SIGN UP</h1>
 									
@@ -25,7 +26,8 @@ const SignUp = (props)=> {
 										<label>Password</label><br/>
 										<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 										<br />
-											<Button className="btn waves-effect waves-light z-depth-5" type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up<i className="material-icons right">send</i>
+											<Button className="btn waves-effect waves-light z-depth-5" type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up
+												<i className="material-icons right">send</i>
 											</Button>
 							
 								</form>

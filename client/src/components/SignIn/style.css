@@ -1,8 +1,10 @@
 /* Signin */
 body{
     background-color: #32849f;
-    opacity: 50%;
-   
+    opacity: 50%;   
+}
+.landing-card{
+    margin-top: -300px;
 }
 
 #card1 {
@@ -11,6 +13,7 @@ body{
     color:#e6e6e6;
     font-family: "Londrina Solid",cursive;
     border-radius: 20px; 
+   
     
 }
 
