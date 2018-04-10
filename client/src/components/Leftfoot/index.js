@@ -23,6 +23,8 @@ const Leftfoot = (props) => {
                             <div id='left-img'className='z-depth-4'>
                                      <div id='cursor'>
                                       </div>
+                                      <div id='cursor1'>
+                                      </div>
                                      <img className='responsive-img' id ='left-single' src={Leftimg}alt='left foot that isnt rendering' />
                                
                             </div>

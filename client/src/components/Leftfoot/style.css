@@ -10,7 +10,7 @@
     width: 50px;
     height: 50px;
     border-radius:20px;
-    background-color: red;
+    background-image: -webkit-radial-gradient(blue,white);
     position: relative;
     /* animation-name: example;
     animation-duration: 25s;
@@ -26,9 +26,9 @@
 
 #cursor {
 	
-    animation: slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 left:70px;
-                top: 220px;
+                top: 250px;
             animation-iteration-count: infinite;
 }
 
@@ -38,7 +38,7 @@
  * animation slide-top
  * ----------------------------------------
  */
-@keyframes slide-top {
+@keyframes slide-right {
     0% {
         transform: translateX(0px);
         /* transform: translateY(-200px); */
@@ -50,7 +50,7 @@
 
     }
     20%{    
-        transform: translateX(80px);
+        /* transform: translateX(80px); */
         /* transform: translateY(120px); */
     }
     30%{
@@ -70,18 +70,78 @@
         /* transform: translateY(360px);  */
     }
     70%{transform: translateX(280px);
-        /* transform: translateY(420px); */
+        /* transform: translateY(-10px); */
     }
     80%{transform: translateX(320px);
-        /* transform: translateY(480px); */
+        /* transform: translateY(-10px); */
     }
     90%{transform: translateX(360px);
-        /* transform: translateY(540px); */
+        /* transform: translateY(-10px); */
     }
     
     100% {
         transform: translateX(400px);
-      transform: translateY(-50px);
+      /* transform: translateY(-10px); */
     }
   }
+
+#cursor1 {
+    width: 50px;
+    height: 50px;
+    border-radius:20px;
+    background-image:-webkit-radial-gradient(red,black);
+    position: relative;
+    animation: slide-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    left:70px;
+    top: 260px;
+     animation-iteration-count: infinite;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0px);
+        /* transform: translateY(-200px); */
+    }
+    10%{
+         transform: translateX(40px);   
+         /* transform: translateY(60px); */
+    
+
+    }
+    20%{    
+        /* transform: translateX(80px); */
+        /* transform: translateY(120px); */
+    }
+    30%{
+        transform: translateX(120px);
+        /* transform: translateY(180px); */
+    }
+    40%{
+        transform: translateX(160px);
+        /* transform: translateY(240px); */
+    }
+    50%{
+        transform: translateX(200px); 
+        /* transform: translateY(300px); */
+    }
+    60%{
+        transform: translateX(240px);
+        /* transform: translateY(360px);  */
+    }
+    70%{transform: translateX(280px);
+        /* transform: translateY(-10px); */
+    }
+    80%{transform: translateX(320px);
+        /* transform: translateY(-10px); */
+    }
+    90%{transform: translateX(360px);
+        /* transform: translateY(-10px); */
+    }
+    
+    100% {
+        transform: translateX(400px);
+      /* transform: translateY(-10px); */
+    }
+  }
+  
   

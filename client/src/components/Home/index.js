@@ -41,7 +41,7 @@ const Home = (props)=> {
 
 									<Row>
 										<Input m={8} offset={'m2'} type='select' label='' icon='weekend' defaultValue='1'>
-										<option value='1' className="validate" required="true">I agree</option>
+										<option value='1' className="validate" required>I agree</option>
 										<option value='2'>I disagree</option>
 										</Input>
 									</Row>	
