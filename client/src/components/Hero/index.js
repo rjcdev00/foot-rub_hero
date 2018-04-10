@@ -13,8 +13,8 @@ const Hero = (props)=> {
             <Row>
                 <Col m={4} offset={'m4'}>
                     <CardPanel id ="hero-panel" className="z-depth-3">
-                        <h1> Footrub Hero </h1>
-                        <h4> Be someone's hero </h4>
+                        <span id='hero-head'><h1> Footrub Hero </h1>
+                        <h4> Be someone's hero </h4> </span>
                         <div id="hero" className='z-depth-4'>
                             <img className="responsive-img"   id="feet"src={FootprintsFull}alt=" feets that aren't rendering" />                
                         </div> 
