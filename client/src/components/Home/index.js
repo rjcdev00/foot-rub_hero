@@ -15,6 +15,11 @@ import "./style.css";
 
 
 const Home = (props)=> {
+
+
+
+
+
 	return (
 		<div>
 			<Hero />					
@@ -42,8 +47,8 @@ const Home = (props)=> {
 									</Row>	
 											
 								</Card>	
-								<Button id="session-begin" className='z-depth-3'>Begin</Button>
-								<Link to={{pathname: '/Leftfoot'}}>leftfoot</Link>{' '}
+								<Button id="session-begin" className='z-depth-3' ><Link to={{pathname: '/Leftfoot'}} id='ses-link'>Begin</Link></Button>
+								{' '}
 							</Col>
 						</Row>	 
 								  	<Button onClick = {props.handleLogout}>Log Out</Button>

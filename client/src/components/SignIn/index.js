@@ -8,8 +8,7 @@ import {Button,
 import Hero from "../Hero";
 
 import "./style.css";
-// import {MediaBox} from 'react-materialize';
-// import {Image} from 'react-materialize';
+
 
 const SignIn = (props)=> {
 	
@@ -17,7 +16,7 @@ const SignIn = (props)=> {
 		<div>
 			<Hero />
 				 <Row>
-					<Col m={4} offset={'m4'}>
+					<Col m={4} offset={'m4'} className='landing-card'>
 					 	<Card id='card1' className='z-depth-2' title=" " actions={[<Link to = '/SignUp' > Register </Link>]}>
 						 <h1 id= 'heading1'> LOG IN</h1>
 							<form>
