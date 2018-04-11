@@ -32,16 +32,16 @@ mongoose.Promise = global.Promise;
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/foot-rub-hero-development"
 );
-var databaseUri = "mongodb://localhost/foot-rub-hero-development";
-//--------------------------------------------------------------
-if (process.env.MONGODB_URI){
-  //THIS EXECUTES IF THIS IT BEING EXECUTED IN YOUR HEROKU APP
-  mongoose.connect(process.env.MONGODB_URI)   
+// var databaseUri = "mongodb://localhost/foot-rub-hero-development";
+// //--------------------------------------------------------------
+// if (process.env.MONGODB_URI){
+//   //THIS EXECUTES IF THIS IT BEING EXECUTED IN YOUR HEROKU APP
+//   mongoose.connect(process.env.MONGODB_URI)   
 
-  }else{ 
-    //THIS EXECUTES IF THIS IS BEING EXECUTED ON YOUR LOCAL MACHINE
-    mongoose.connect(databaseUri);
-  }
+//   }else{ 
+//     //THIS EXECUTES IF THIS IS BEING EXECUTED ON YOUR LOCAL MACHINE
+//     mongoose.connect(databaseUri);
+//   }
 //----------------------end Database config-------------------
 
 // Start the API server
