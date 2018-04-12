@@ -1,0 +1,43 @@
+/* Tips */
+.dropdown-content{
+    font-size: 28px ;
+    color: #26a69a ;
+    background-color: #b25a00 ;
+    padding-left:8px ;
+    padding-top: 14px ;
+}
+
+.modal-content{
+    background-color: #b25a00 ;
+    font-size: 18px ;
+
+}
+
+.modal .modal-footer{
+    background-color:#26a69a ;
+}
+.modal .modal-close :hover{
+    background-color: #b25a00;
+
+}
+.modal {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ #position{
+     margin-left: 150px;
+ }
+  

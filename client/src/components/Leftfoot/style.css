@@ -10,138 +10,102 @@
     width: 50px;
     height: 50px;
     border-radius:20px;
-    background-image: -webkit-radial-gradient(blue,white);
-    position: relative;
-    /* animation-name: example;
-    animation-duration: 25s;
-    animation-iteration-count: infinite; */
-}
-/* @keyframes example {
-    0%   {background-color:red; left:20px; top:150px;}
-    25%  {background-color:yellow; left:100px; top:75px;}
-    50%  {background-color:blue; left:0px; top:0px;}
-    75%  {background-color:green; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
-} */
-
-#cursor {
-	
-    animation: slide-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                left:70px;
-                top: 250px;
-            animation-iteration-count: infinite;
+    background-image: -webkit-radial-gradient(white,blue);
+    position: absolute;
+     left:70px;
+    top: 250px;
+    animation:  slide-right 4s linear 5 both,
+                slide-top 4s 25s linear 5 both;   
 }
 
-
- /**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
-@keyframes slide-right {
-    0% {
-        transform: translateX(0px);
-        /* transform: translateY(-200px); */
-    }
-    10%{
-         transform: translateX(40px);   
-         /* transform: translateY(60px); */
-    
-
-    }
-    20%{    
-        /* transform: translateX(80px); */
-        /* transform: translateY(120px); */
-    }
-    30%{
-        transform: translateX(120px);
-        /* transform: translateY(180px); */
-    }
-    40%{
-        transform: translateX(160px);
-        /* transform: translateY(240px); */
-    }
-    50%{
-        transform: translateX(200px); 
-        /* transform: translateY(300px); */
-    }
-    60%{
-        transform: translateX(240px);
-        /* transform: translateY(360px);  */
-    }
-    70%{transform: translateX(280px);
-        /* transform: translateY(-10px); */
-    }
-    80%{transform: translateX(320px);
-        /* transform: translateY(-10px); */
-    }
-    90%{transform: translateX(360px);
-        /* transform: translateY(-10px); */
-    }
-    
-    100% {
-        transform: translateX(400px);
-      /* transform: translateY(-10px); */
-    }
-  }
 
 #cursor1 {
     width: 50px;
     height: 50px;
     border-radius:20px;
     background-image:-webkit-radial-gradient(red,black);
-    position: relative;
-    animation: slide-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: absolute;
     left:70px;
     top: 260px;
-     animation-iteration-count: infinite;
-}
-
-@keyframes slide-right {
-    0% {
-        transform: translateX(0px);
-        /* transform: translateY(-200px); */
-    }
-    10%{
-         transform: translateX(40px);   
-         /* transform: translateY(60px); */
+    animation: slide-right 4s  1s linear 5 both,
+                slide-top 4s 20s linear 10 both;
     
+}
+ /**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+@keyframes slide-right {
 
+    from{left: 70px}
+    to{left: 400px}
+   
+  }
+  /**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@keyframes slide-top {
+    from{top:260px}
+    to{top:160px}
+    /* 0% {
+      transform: translateY(-70px)
     }
-    20%{    
-        /* transform: translateX(80px); */
-        /* transform: translateY(120px); */
+    10% {transform: translateX(-20px)
+    }
+    20% {transform: translateY(-100px)
+    }
+    25%{transform: translateX(-50px)
     }
     30%{
-        transform: translateX(120px);
-        /* transform: translateY(180px); */
-    }
+        transform: translateY(-100px)
+    };
+    35%{
+        transform: translateX(-100px)
+    };
     40%{
-        transform: translateX(160px);
-        /* transform: translateY(240px); */
-    }
+        transform: translateY(-100px)
+    };
+    45%{
+        transform: translateX(-50px)
+    };
     50%{
-        transform: translateX(200px); 
-        /* transform: translateY(300px); */
-    }
+        transform: translateY(-100px)
+    };
+    55%{
+        transform: translateX(-60px)
+    };
     60%{
-        transform: translateX(240px);
-        /* transform: translateY(360px);  */
-    }
-    70%{transform: translateX(280px);
-        /* transform: translateY(-10px); */
-    }
-    80%{transform: translateX(320px);
-        /* transform: translateY(-10px); */
-    }
-    90%{transform: translateX(360px);
-        /* transform: translateY(-10px); */
-    }
+        transform: translateY(-100px)
+    };
+    65%{
+        transform: translateX(-70px)
+    };
+    70%{
+        transform: translateY(-100px)
+    };
+    75%{
+        transform: translateX(-80px)
+    };
+    80%{
+        transform: translateY(-100px)
+    };
+    85%{
+        transform: translateX(-90px)
+    };
+    90%{
+        transform: translateY(-100px)
+    };
+    95%{
+        transform: translateX(-100px)
+    };
     
     100% {
-        transform: translateX(400px);
-      /* transform: translateY(-10px); */
-    }
+      transform: translateY(-100px);
+    } */
   }
-  
-  
+
+
+
