@@ -26,3 +26,12 @@ font-size: 48px;
 #ses-link{
     color:white !important;
 }
+a:-webkit-any-link:hover {
+    color:#b25a00;
+    background: #32849f;
+   
+}
+
+#name{
+    color: blue;
+}

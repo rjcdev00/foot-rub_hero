@@ -6,17 +6,16 @@
     border-radius: 20px;
 }
 
-#cursor{
+ /* #cursor{
     width: 50px;
     height: 50px;
     border-radius:20px;
     background-image: -webkit-radial-gradient(white,blue);
     position: absolute;
-     left:70px;
-    top: 250px;
-    animation:  slide-right 4s linear 5 both,
-                slide-top 4s 25s linear 5 both;   
-}
+    animation:  counterwise  5s linear 2 forwards,
+                upwise 5s 10s linear infinite forwards;       
+               
+}   */
 
 
 #cursor1 {
@@ -25,87 +24,84 @@
     border-radius:20px;
     background-image:-webkit-radial-gradient(red,black);
     position: absolute;
-    left:70px;
-    top: 260px;
-    animation: slide-right 4s  1s linear 5 both,
-                slide-top 4s 20s linear 10 both;
-    
+    animation: clockwise 5s linear 2 forwards,
+               downwise 5s  10s linear 2 forwards,
+               downwise2 5s 20s linear 2 forwards;       
 }
+
+
+
  /**
  * ----------------------------------------
- * animation slide-right
+ * animation 
  * ----------------------------------------
  */
-@keyframes slide-right {
+ @keyframes clockwise {
+     
+    0%   {top: 100px; left: 0px;background-image: limegreen;}
+    25%  {top: 100px; left: 100px; }
+    50%  {top: 150px; left: 100px;}
+    75%  {top: 150px; left: 0px; }
+    100% {top: 0px; left: 0px;}
 
-    from{left: 70px}
-    to{left: 400px}
-   
-  }
-  /**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
-@keyframes slide-top {
-    from{top:260px}
-    to{top:160px}
-    /* 0% {
-      transform: translateY(-70px)
+} 
+ @keyframes counterwise {
+    0%   {top: 200px; left: 0px; }
+    25%  {top: 100px; left: 0px; }
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 0px; left: 100px;}
+    100% {top: 0px; left: 0px;}
+
+} 
+@keyframes upwise{
+    0%   {top: 200px; left: 0px; }
+    25%  {bottom: 100px; left:100px; }
+    50%  {top: 100px;left:100px; }
+    75%  {top: 0px; }
+    100% {top: 0px; }
+
+} 
+@keyframes downwise{
+    0%{
+        background-color: navy;
+        -webkit-transform: translateY(0px);
+        -webkit-transform: translateX(0px);
+        
     }
-    10% {transform: translateX(-20px)
+    50% {
+        -webkit-transform: translateX(100px);
+        /* -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+        -o-transform: translateX(300px);
+        transform: translateX(300px); */
+      }
+      100% {
+        -webkit-transform: translateX(100px) translateY(200px);
+        /* -moz-transform: translateX(300px) translateY(300px);
+        -ms-transform: translateX(300px) translateY(300px);
+        -o-transform: translateX(300px) translateY(300px);
+        transform: translateX(300px) translateY(300px); */
+        
+      }
+      
+    /* 0%   {top:230px;left: 0px; background:yellow; }
+    25%  {top: 250px;left: 50px; background:grey; }
+    50%  {bottom: 300px;left: 100px; background:purple;}
+    75%  {top: 350px; left:150px; background:magenta;}
+    100% {top: 400px;left: 200px; background:white;} */
+
+} 
+@keyframes downwise2 {
+    0%{
+        top:200px; left: 100px;
+        background-color:magenta;
     }
-    20% {transform: translateY(-100px)
+    50% {
+        -webkit-transform: translateX(200px);
+        -webkit-transform: translateY(200px)
+       
     }
-    25%{transform: translateX(-50px)
-    }
-    30%{
-        transform: translateY(-100px)
-    };
-    35%{
-        transform: translateX(-100px)
-    };
-    40%{
-        transform: translateY(-100px)
-    };
-    45%{
-        transform: translateX(-50px)
-    };
-    50%{
-        transform: translateY(-100px)
-    };
-    55%{
-        transform: translateX(-60px)
-    };
-    60%{
-        transform: translateY(-100px)
-    };
-    65%{
-        transform: translateX(-70px)
-    };
-    70%{
-        transform: translateY(-100px)
-    };
-    75%{
-        transform: translateX(-80px)
-    };
-    80%{
-        transform: translateY(-100px)
-    };
-    85%{
-        transform: translateX(-90px)
-    };
-    90%{
-        transform: translateY(-100px)
-    };
-    95%{
-        transform: translateX(-100px)
-    };
-    
     100% {
-      transform: translateY(-100px);
-    } */
-  }
-
-
-
+        -webkit-transform: translateX(200px) translateY(200px);
+        } 
+}   

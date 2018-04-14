@@ -5,12 +5,12 @@
     /* font-family: 'Bigelow Rules', cursive; */
     font-family: 'Londrina Solid', cursive;
         text-align: center;
-        background-color: #32849f;
+        background-image: -webkit-radial-gradient(#32849f,#073642);
         border-radius: 20px;
          
 } 
 #hero-panel {
-    background-color: #b25a00;
+    background-image: -webkit-radial-gradient(#7F4000,#b25a00);
     /* color:#e6e6e6;     */
     color:#32849f;
     font-family: 'Londrina Solid', cursive;

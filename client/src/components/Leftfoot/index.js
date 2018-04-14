@@ -1,4 +1,5 @@
 import React from 'react';
+import{ Component } from 'react';
 import {
     Card,
     Col,
@@ -6,12 +7,18 @@ import {
 } from 'react-materialize';
 import './style.css';
 import Leftimg from '../../Images/left.png';
-// import Timer from '../Timer';
+import Countdown from 'react-countdown-now';
 
 // import Hero from "../Hero";
 
-const Leftfoot = (props) => {
-   
+class Leftfoot extends Component {
+    state = {
+        time: 300 
+    };
+    
+
+    
+   render() {
         return(
             <div>
                 {/* <Hero /> */}
@@ -21,9 +28,11 @@ const Leftfoot = (props) => {
                         <Card id='card1' className='z-depth-2'>
                             {/* <Countdown /> */}
                             <div id='left-img'className='z-depth-4'>
-                                     <div id='cursor'>
+                                     <div id='cursor' className='z-depth-3'>
+                                     
                                       </div>
-                                      <div id='cursor1'>
+                                      <div id='cursor1' className='z-depth-3'>
+                                      
                                       </div>
                                      <img className='responsive-img' id ='left-single' src={Leftimg}alt='left foot that isnt rendering' />
                                
@@ -32,7 +41,7 @@ const Leftfoot = (props) => {
                         </Card>
                         <Row>
                             <Col m={4} offset={'m4'}> 
-                                 {/* <Timer /> */}
+                                 <Countdown />
                             </Col>
                         </Row>    
                     </Col>
@@ -40,5 +49,5 @@ const Leftfoot = (props) => {
             </div>
         );
     }    
-
+}
 export default Leftfoot;

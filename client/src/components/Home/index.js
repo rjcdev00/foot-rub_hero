@@ -37,7 +37,7 @@ const Home = (props)=> {
 						<Row>
 							<Col m={6} offset={'m3'}  className="disclaimer z-index-4">
 								<Card>	
-									<p id='disclaimerP'>I, {props.auth.username} understand that the information on this App is not a substitute for professional medical advice, diagnosis or treatment. All content, including text, graphics, images and information, contained on or available through this App is for general information purposes only.</p>
+									<p id='disclaimerP'>I, <span id='name'>{props.auth.username}</span> understand that the information on this App is not a substitute for professional medical advice, diagnosis or treatment. All content, including text, graphics, images and information, contained on or available through this App is for general information purposes only.</p>
 
 									<Row>
 										<Input m={8} offset={'m2'} type='select' label='' icon='weekend' defaultValue='1'>

@@ -1,6 +1,6 @@
 /* Signin */
 body{
-    background-color: #32849f;
+    background-image: -webkit-radial-gradient(#32849f,#073642);
     opacity: 50%;   
 }
 .landing-card{
