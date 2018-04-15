@@ -5,7 +5,7 @@ import {Card,
 		 Button,
 		 Input
 		} from 'react-materialize';
-import {Link}from 'react-router-dom'
+import {Link}from 'react-router-dom';
 import Duration from "../Duration";		
 import Hero from "../Hero";
 import Tips from "../Tips";

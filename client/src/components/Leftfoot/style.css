@@ -5,9 +5,12 @@
     border: 2px;
     border-radius: 20px;
 }
+#left-img{
+   margin-top: 10%;
+}
 
- /* #cursor{
-    width: 50px;
+  #cursor{
+    width: 150px;
     height: 50px;
     border-radius:20px;
     background-image: -webkit-radial-gradient(white,blue);
@@ -15,18 +18,19 @@
     animation:  counterwise  5s linear 2 forwards,
                 upwise 5s 10s linear infinite forwards;       
                
-}   */
+}  
 
 
 #cursor1 {
-    width: 50px;
+    width: 150px;
     height: 50px;
     border-radius:20px;
     background-image:-webkit-radial-gradient(red,black);
     position: absolute;
-    animation: clockwise 5s linear 2 forwards,
-               downwise 5s  10s linear 2 forwards,
-               downwise2 5s 20s linear 2 forwards;       
+    animation:
+               downwise 5s   linear 10 forwards,
+                counterwise 5s linear 10 forwards,
+                downwise2 5s 20s linear 10 forwards;        
 }
 
 
@@ -46,11 +50,12 @@
 
 } 
  @keyframes counterwise {
-    0%   {top: 200px; left: 0px; }
-    25%  {top: 100px; left: 0px; }
-    50%  {top: 100px; left: 100px;}
-    75%  {top: 0px; left: 100px;}
-    100% {top: 0px; left: 0px;}
+    0%   {top: 400px; left: 200px; }
+    15%  {top: 500px; left: 250px;}
+    25%  {top: 400px; left: 250px; }
+    50%  {top: 500px; left: 250px;}
+    75%  {top: 400px; left: 200px;}
+    100% {top: 500px; left: 200px;}
 
 } 
 @keyframes upwise{
@@ -64,19 +69,19 @@
 @keyframes downwise{
     0%{
         background-color: navy;
-        -webkit-transform: translateY(0px);
+        -webkit-transform: translateY(500px);
         -webkit-transform: translateX(0px);
         
     }
     50% {
-        -webkit-transform: translateX(100px);
+        -webkit-transform: translateX(300px);
         /* -moz-transform: translateX(300px);
         -ms-transform: translateX(300px);
         -o-transform: translateX(300px);
         transform: translateX(300px); */
       }
       100% {
-        -webkit-transform: translateX(100px) translateY(200px);
+        -webkit-transform: translateX(300px) translateY(300px);
         /* -moz-transform: translateX(300px) translateY(300px);
         -ms-transform: translateX(300px) translateY(300px);
         -o-transform: translateX(300px) translateY(300px);
